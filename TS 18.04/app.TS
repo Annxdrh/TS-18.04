@@ -54,7 +54,12 @@ get getlastname(): string{
 set setlastname (value:string){
   this.lastname = value 
 }
-    // get+ set
+getItems(): Publisher[] {
+  return this.items;
+}
+setItems(items: Publisher[]): void {
+  this.items = items;
+}
 delivery(item: Publisher): void {
         if(item.copies == 0 || items.copies == Reader.items.length ) return
         item.copies = item.copies - 1
